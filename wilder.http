@@ -1,0 +1,29 @@
+### Create wilder
+POST http://localhost:5000/api/wilder/create HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Amanel",
+    "city": "Tours",
+    "skills":[
+        {"title": "express", "votes": 5},
+        {"title": "mongo", "votes": 12},
+        {"title": "HTML", "votes": 8},
+        {"title": "CSS", "votes": 7}
+    ]
+}
+
+#### Show wilder
+GET http://localhost:5000/api/wilder/read HTTP/1.1
+
+### Update Wilder
+PUT http://localhost:5000/api/wilder/update/6142035d9b85b4970124a646 HTTP/1.1
+content-type: application/json
+
+{
+    "city": "Tours"
+}
+
+
+### Delete Wilder
+DELETE http://localhost:5000/api/wilder/delete/6143564d64b6d3a1ba31f98f HTTP/1.1
